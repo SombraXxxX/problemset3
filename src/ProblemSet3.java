@@ -27,7 +27,12 @@ public class ProblemSet3 {
 	 */
 	
 	public static void main(String[] args) {
-			
+		ProblemSet3 ps3 = new ProblemSet3();
+		ps3.dateFashion(5, 10);
+		ps3.fizzString("fig");
+		ps3.squirrelPlay(70, false);
+		ps3.squirrelPlay(95, false);
+		ps3.squirrelPlay(95, true);
 	}
 	
 	/*
@@ -47,7 +52,13 @@ public class ProblemSet3 {
 	 */
 	
 	public void dateFashion(int you, int date) {
-		
+		if(you >= 8 || date >= 8) {
+			System.out.println("YES");
+		} else if ( you <= 2 || date <= 2 ) { 
+			System.out.println("NO");
+		}else { 
+			System.out.println("MAYBE");
+		}
 	}
 	
 	/*
@@ -63,6 +74,15 @@ public class ProblemSet3 {
 	
 	public void fizzString(String str) {
 		
+		if(str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b') {
+			System.out.println("FIZZBUZZ");
+		} else if (str.charAt(str.length() - 1) == 'b') { 
+			System.out.println("BUZZ");
+		} else if (str.charAt(0) == 'f'){ 
+			System.out.println("FIZZ");
+		} else {
+			System.out.println("the string is unchanged");
+		}
 	}
 	
 	/*
@@ -78,7 +98,13 @@ public class ProblemSet3 {
 	 */
 	
 	public void squirrelPlay(int temp, boolean isSummer) {
-		
+		if( isSummer = true) {
+			if(temp >= 60 || temp <= 100 ) {
+				System.out.println("YES");
+			}else if(temp >= 60 && temp <= 90){
+				System.out.println("NO");
+			}
+		}
 	}
 	
 	/*
