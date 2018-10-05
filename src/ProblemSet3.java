@@ -101,7 +101,7 @@ public class ProblemSet3 {
 		} else if (str.charAt(0) == 'f'){ 
 			System.out.println("FIZZ");
 		} else {
-			System.out.println("the string is unchanged");
+			System.out.println(str);
 		}
 	}
 	
