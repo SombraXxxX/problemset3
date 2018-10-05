@@ -74,11 +74,11 @@ public class ProblemSet3 {
 	
 	public void dateFashion(int you, int date) {
 		if(you >= 8 || date >= 8) {
-			System.out.println("YES");
+			System.out.println("YES.");
 		} else if ( you <= 2 || date <= 2 ) { 
-			System.out.println("NO");
+			System.out.println("NO.");
 		}else { 
-			System.out.println("MAYBE");
+			System.out.println("MAYBE.");
 		}
 	}
 	
@@ -95,11 +95,11 @@ public class ProblemSet3 {
 	
 	public void fizzString(String str) {
 		if(str.charAt(0) == 'f' && str.charAt(str.length() - 1) == 'b') {
-			System.out.println("FIZZBUZZ");
+			System.out.println("FIZZBUZZ.");
 		} else if (str.charAt(str.length() - 1) == 'b') { 
-			System.out.println("BUZZ");
+			System.out.println("BUZZ.");
 		} else if (str.charAt(0) == 'f'){ 
-			System.out.println("FIZZ");
+			System.out.println("FIZZ.");
 		} else {
 			System.out.println(str);
 		}
@@ -121,18 +121,18 @@ public class ProblemSet3 {
 		if (temp <= 100 && temp >= 60) {
 			if (temp > 90) {
 				if (isSummer) {
-					System.out.println("YES");
+					System.out.println("YES.");
 				}
 				else {
-					System.out.println("NO");
+					System.out.println("NO.");
 				}
 			}
 			else {
-				System.out.println("YES");
+				System.out.println("YES.");
 			}
 		}
 		else {
-			System.out.println("NO");
+			System.out.println("NO.");
 		}
 	}
 	/*
@@ -149,10 +149,10 @@ public class ProblemSet3 {
 	public void fizzStringAgain(int n) {
 		if (n % 3 == 0 || n % 5 == 0) {
 			if (n % 3 == 0) {
-				System.out.print("FIZZ");
+				System.out.print("FIZZ.");
 			}
 			if (n % 5 == 0) {
-				System.out.print("BUZZ");
+				System.out.print("BUZZ.");
 			}
 			System.out.println("!");
 		}
@@ -177,15 +177,15 @@ public class ProblemSet3 {
 		if (goal <= max) {
 			if (big >= (goal / 5)) {
 				if (small >= goal % 5) {
-					System.out.println("YES");
+					System.out.println("YES.");
 				}else {
-					System.out.println("NO");
+					System.out.println("NO.");
 				}
 			}else {
-				System.out.println("YES");
+				System.out.println("YES.");
 			}
 		}else {
-			System.out.println("NO");
+			System.out.println("NO.");
 		}
 	}
 	
@@ -214,7 +214,7 @@ public class ProblemSet3 {
 				sum -= (c*2);
 			}
 		}
-		System.out.println(sum);	
+		System.out.println(sum + ".");	
 	}
 	
 	/*
@@ -239,7 +239,7 @@ public class ProblemSet3 {
 				sum -= 13;
 			}
 		}
-		System.out.println(sum);
+		System.out.println(sum + ".");
 	}
 	
 	/*
@@ -298,9 +298,9 @@ public class ProblemSet3 {
 		}	if (n == 1) {
 			isPrime = false;
 		}if (isPrime) {
-			System.out.println("Prime");
+			System.out.println("Prime.");
 		}else {
-			System.out.println("Not Prime");
+			System.out.println("Not Prime.");
 		}
 	}
 	}
